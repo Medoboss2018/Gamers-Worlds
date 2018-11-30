@@ -12,7 +12,7 @@ client.on('ready', () => {
         maxUses: 5,
         maxAge: 3600,
     }).then(invite =>
-      message.author.sendMessage('https://discord.gg/kMuebBW')
+      message.author.sendMessage('https://discord.gg/DzxhsMB')
     )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
