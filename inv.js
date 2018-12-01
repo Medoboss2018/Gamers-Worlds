@@ -12,7 +12,7 @@ client.on('ready', () => {
         maxUses: 5,
         maxAge: 3600,
     }).then(invite =>
-      message.author.sendMessage('invite.url')
+      message.author.sendMessage("invite.url")
     )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -25,7 +25,8 @@ client.on('ready', () => {
               const Embed11 = new Discord.RichEmbed()
         .setColor("RANDOM")
 
-    .setDescription(" مدة الرابط : مؤبد | عدد استخدامات الرابط : غير محددة ")
+              
+    .setDescription("مدة الرابط : يوم | عدد استخدامات الرابط : 5")
       message.author.sendEmbed(Embed11)
     }
 });
