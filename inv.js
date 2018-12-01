@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+cconst Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -12,7 +12,7 @@ client.on('ready', () => {
         maxUses: 5,
         maxAge: 3600,
     }).then(invite =>
-      message.author.sendMessage('https://discord.gg/DzxhsMB')
+      message.author.sendMessage('invite.url')
     )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -31,18 +31,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-var prefix = "&";
-
-if (!message.content.startsWith(prefix)) return;
-var args = message.content.split(' ').slice(1);
-var argresult = args.join(' ');
-if (message.author.id == 439393453332234243) return;
-if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '439393453332234243') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-client.user.setGame(argresult);
- message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
-} else
-
+var prefix = "$";
 
 if (message.content.startsWith(prefix + 'streem')) {
 if (message.author.id !== '439393453332234243') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
