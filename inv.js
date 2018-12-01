@@ -1,4 +1,4 @@
-cconst Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -31,7 +31,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-var prefix = "$";
+var prefix = "&";
 
 if (message.content.startsWith(prefix + 'streem')) {
 if (message.author.id !== '439393453332234243') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
