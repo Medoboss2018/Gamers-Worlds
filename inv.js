@@ -66,10 +66,6 @@ client.on('message',async message => {
   }
 });
 
-client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","❁Member"));
-    });
-
 const adminprefix = "$";
 const devs = ['439393453332234243','439393453332234243'];
 client.on('message', message => {
